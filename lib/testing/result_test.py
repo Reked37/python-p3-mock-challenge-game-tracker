@@ -100,13 +100,13 @@ class TestResults:
 
     def test_get_all_results(self):
         """Result class has all attribute"""
-        Result.all = []
+        Result.results = []
         game = Game("Codenames")
         player_1 = Player("Ja'Vonn")
         player_2 = Player("Brett")
         result_1 = Result(player_1, game, 2)
         result_2 = Result(player_2, game, 5)
 
-        assert len(Result.all) == 2
-        assert result_1 in Result.all
-        assert result_2 in Result.all
+        assert len(Result.results) == 2
+        assert result_1 in Result.results
+        assert result_2 in Result.results

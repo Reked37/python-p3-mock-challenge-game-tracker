@@ -18,10 +18,23 @@ class Result:
         else:
             print('something wrong with the score')
 
-    def all(self):
-        print('test')
-        return len(results)
+    # @property
+    # def player(self):
+    #     return self.player
 
+    # @player.setter
+    # def player(self, new_player):
+    #     self.player= new_player
+
+    # @property
+    # def game(self):
+    #     return self.game
+    
+    # @game.setter
+    # def game(self, new_game):
+    #     self.game= new_game
+    def all(self):
+        return len(results)
 
 
 from classes.game import Game
